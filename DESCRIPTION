@@ -1,0 +1,23 @@
+Package: gdallocationinfo
+Title: Lookup raster values by points
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = "Michael D.",
+           family = "Sumner",
+           role = c("aut", "cre"),
+           email = "mdsumner@gmail.com",
+           comment = c(ORCID = "0000-0002-2471-7511")))
+Description: Return location info, the value of raster at a point. This is an analogue of the
+ GDAL command line program gdallocationinfo. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports: 
+    furrr,
+    gdalraster,
+    methods,
+    vaster
+Remotes: hypertidy/vaster
+Suggests: 
+    maps
