@@ -21,3 +21,5 @@ Imports:
 Remotes: hypertidy/vaster
 Suggests: 
     maps
+URL: https://github.com/hypertidy/gdallocationinfo
+BugReports: https://github.com/hypertidy/gdallocationinfo/issues
