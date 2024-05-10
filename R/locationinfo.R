@@ -4,9 +4,11 @@
 #' Input a raster, specify band number if you want anything but the first band. xy is expected to
 #' be a matrix: `cbind(lon, lat)`.
 #'
+#' Can be parallelized by setting `plan()` with the 'future' package (via 'furrr').
 #'
 #' @param x raster data source
 #' @param xy points on the raster (we assume longlat)
+#' @param band which band to read, defaults to `1`
 #'
 #' @return numeric vector
 #' @export

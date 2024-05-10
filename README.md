@@ -4,6 +4,8 @@
 # gdallocationinfo
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/hypertidy/gdallocationinfo/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hypertidy/gdallocationinfo/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of gdallocationinfo is to look up values on a raster source.

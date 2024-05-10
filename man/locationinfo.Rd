@@ -10,6 +10,8 @@ locationinfo(x, xy, band = 1L)
 \item{x}{raster data source}
 
 \item{xy}{points on the raster (we assume longlat)}
+
+\item{band}{which band to read, defaults to \code{1}}
 }
 \value{
 numeric vector
@@ -17,6 +19,9 @@ numeric vector
 \description{
 Input a raster, specify band number if you want anything but the first band. xy is expected to
 be a matrix: \code{cbind(lon, lat)}.
+}
+\details{
+Can be parallelized by setting \code{plan()} with the 'future' package (via 'furrr').
 }
 \examples{
 geb <- "/vsicurl/https://gebco2023.s3.valeria.science/gebco_2023_land_cog.tif"
