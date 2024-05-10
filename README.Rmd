@@ -42,8 +42,10 @@ library(gdallocationinfo)
 loc <- locationinfo("/vsicurl/https://gebco2023.s3.valeria.science/gebco_2023_land_cog.tif", 
                     as.matrix(maps::world.cities[1:1000, c("long", "lat")]))
 
-str(loc)
 #plan(sequential)
+
+str(loc)
+range(loc)
 maps::world.cities$name[which.max(loc)]
 maps::world.cities$name[which.min(loc)]
 ```

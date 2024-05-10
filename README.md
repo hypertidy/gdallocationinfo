@@ -29,18 +29,23 @@ library(gdallocationinfo)
 #library(furrr); plan(multicore)
 
 loc <- locationinfo("/vsicurl/https://gebco2023.s3.valeria.science/gebco_2023_land_cog.tif", 
-                    as.matrix(maps::world.cities[1:100, c("long", "lat")]))
+                    as.matrix(maps::world.cities[1:1000, c("long", "lat")]))
 #> 
 #> Attaching package: 'purrr'
 #> The following object is masked from 'package:base':
 #> 
 #>     %||%
 
-str(loc)
-#>  num [1:100] 79 86 140 17 331 ...
 #plan(sequential)
+
+str(loc)
+#>  num [1:1000] 79 86 140 17 331 ...
+range(loc)
+#> [1] -365 3848
 maps::world.cities$name[which.max(loc)]
-#> [1] "'Amran"
+#> [1] "Achacachi"
+maps::world.cities$name[which.min(loc)]
+#> [1] "Ahe"
 ```
 
 ## Code of Conduct
